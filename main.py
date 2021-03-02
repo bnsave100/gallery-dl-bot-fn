@@ -43,7 +43,7 @@ class NoUrlError(Exception):
 
 class GetUrlJob(job.Job):
     """Print download urls"""
-    maxdepth = 1
+    maxdepth = 5
 
     def __init__(self, url, parent=None, depth=1):
         job.Job.__init__(self, url, parent)
